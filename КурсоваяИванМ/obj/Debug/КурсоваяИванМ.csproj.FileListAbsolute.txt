@@ -1,0 +1,7 @@
+C:\Users\andre\OneDrive\Рабочий стол\Учеба\Ivan_Motinga\КурсоваяИванМ\bin\Debug\КурсоваяИванМ.exe.config
+C:\Users\andre\OneDrive\Рабочий стол\Учеба\Ivan_Motinga\КурсоваяИванМ\bin\Debug\КурсоваяИванМ.exe
+C:\Users\andre\OneDrive\Рабочий стол\Учеба\Ivan_Motinga\КурсоваяИванМ\bin\Debug\КурсоваяИванМ.pdb
+C:\Users\andre\OneDrive\Рабочий стол\Учеба\Ivan_Motinga\КурсоваяИванМ\obj\Debug\КурсоваяИванМ.csproj.AssemblyReference.cache
+C:\Users\andre\OneDrive\Рабочий стол\Учеба\Ivan_Motinga\КурсоваяИванМ\obj\Debug\КурсоваяИванМ.csproj.CoreCompileInputs.cache
+C:\Users\andre\OneDrive\Рабочий стол\Учеба\Ivan_Motinga\КурсоваяИванМ\obj\Debug\КурсоваяИванМ.exe
+C:\Users\andre\OneDrive\Рабочий стол\Учеба\Ivan_Motinga\КурсоваяИванМ\obj\Debug\КурсоваяИванМ.pdb
