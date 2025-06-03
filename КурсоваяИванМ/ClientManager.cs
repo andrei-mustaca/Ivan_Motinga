@@ -9,14 +9,14 @@ namespace КурсоваяИванМ
 {
     class ClientManager
     {
-        public string Name { get; set; }
-        public string Surname { get; set; }
+        public int Id { get; set; }
+        public string FullName { get; set; }
         public string Phone { get; set; }
 
-        public ClientManager(string name,string surname,string phone)
+        public ClientManager(int id,string fullname,string phone)
         {
-            Name = name;
-            Surname = surname;
+            Id = id;
+            FullName = fullname;
             Phone = phone;
         }
 
@@ -29,7 +29,7 @@ namespace КурсоваяИванМ
                 for(int i=0;i<lines.Length;i++)
                 {
                     string[] elem = lines[i].Split(';');
-                    clients.Add(new ClientManager(elem[0], elem[1], elem[2]));
+                    clients.Add(new ClientManager(Convert.ToInt32(elem[0]), elem[1], elem[2]));
                 }
             }
             return clients;
@@ -40,7 +40,7 @@ namespace КурсоваяИванМ
             List<string> list = new List<string>(clients.Count);
             for(int i=0;i<list.Capacity;i++)
             {
-                string line = clients[i].Surname + ";" +clients[i].Name+ ";" + clients[i].Phone;
+                string line = clients[i].Id+";"+clients[i].FullName+ ";" + clients[i].Phone;
                 list.Add(line);
             }
             File.WriteAllLines(filePath, list);
@@ -48,17 +48,17 @@ namespace КурсоваяИванМ
 
         public static ClientManager AddClient()
         {
-            Console.Write("Введите имя клиента:");
+            Console.Write("Введите идентификатор пользователя:");
+            int id = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Введите ФИО клиента:");
             string name = Console.ReadLine();
-            Console.Write("Введите фамилию клиента:");
-            string surname = Console.ReadLine();
             Console.Write("Введите номер телефона клиента:");
             string phone = Console.ReadLine();
-            return new ClientManager(name,surname,phone);
+            return new ClientManager(id,name,phone);
         }
         public void Print()
         {
-            Console.WriteLine($"Фамилия:{Surname};Имя:{Name};Номер телефона:{Phone}");
+            Console.WriteLine($"ID:{Id};ФИО:{FullName};Номер телефона:{Phone}");
         }
     }
 }
